@@ -907,6 +907,10 @@ h4 {
   background-color: #f7e7e6;
   padding: 3rem 4rem;
 }
+
+.often-questions .none {
+  display: none;
+}
 .often-questions .accordion-block:before {
   content: '';
   position: absolute;
@@ -919,10 +923,10 @@ h4 {
 .often-questions .ui-accordion-header-active {
   cursor: auto;
   color: #c51abb;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
 }
 .often-questions .ui-accordion-header-active span {
-  border-bottom: none;
+  border-bottom: 0;
 }
 .often-questions .ui-accordion-content-active {
   margin-bottom: 4rem;

@@ -45,7 +45,6 @@ const filter = () => {
             typeFilter(elem);
         }
     });
-
 };
 
 export default filter;
