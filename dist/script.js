@@ -4442,7 +4442,6 @@ module.exports = g;
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/accordion */ "./src/js/modules/accordion.js");
-/* harmony import */ var _modules_accordion__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_accordion__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_calc__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/calc */ "./src/js/modules/calc.js");
 /* harmony import */ var _modules_checkTextInputs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/checkTextInputs */ "./src/js/modules/checkTextInputs.js");
 /* harmony import */ var _modules_filter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/filter */ "./src/js/modules/filter.js");
@@ -4474,7 +4473,7 @@ window.addEventListener('DOMContentLoaded', function () {
   Object(_modules_calc__WEBPACK_IMPORTED_MODULE_1__["default"])('#size', '#material', '#options', '.promocode', '.calc-price');
   Object(_modules_filter__WEBPACK_IMPORTED_MODULE_3__["default"])();
   Object(_modules_pictureSize__WEBPACK_IMPORTED_MODULE_7__["default"])('.sizes-block');
-  _modules_accordion__WEBPACK_IMPORTED_MODULE_0___default()();
+  Object(_modules_accordion__WEBPACK_IMPORTED_MODULE_0__["default"])();
 });
 
 /***/ }),
@@ -4483,10 +4482,41 @@ window.addEventListener('DOMContentLoaded', function () {
 /*!*************************************!*\
   !*** ./src/js/modules/accordion.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\OpenServer\\domains\\portrait\\src\\js\\modules\\accordion.js: Unexpected token (3:10)\n\n\u001b[0m \u001b[90m 1 | \u001b[39m\u001b[36mconst\u001b[39m accordion \u001b[33m=\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 2 | \u001b[39m    \u001b[36mconst\u001b[39m wrapper \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelector(\u001b[32m'#accordion'\u001b[39m)\u001b[33m,\u001b[39m\u001b[33mA\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 3 | \u001b[39m          answers \u001b[33m=\u001b[39m document\u001b[33m.\u001b[39mquerySelectorAll(\u001b[32m'.accordion-block'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m   | \u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 4 | \u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 5 | \u001b[39m    answers\u001b[33m.\u001b[39mforEach(answer \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 6 | \u001b[39m        answer\u001b[33m.\u001b[39mclassList\u001b[33m.\u001b[39madd(\u001b[32m'animated'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'fadeInDown'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'none'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n    at Parser.raise (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:6975:17)\n    at Parser.unexpected (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:8368:16)\n    at Parser.parseVar (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:11311:18)\n    at Parser.parseVarStatement (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:11126:10)\n    at Parser.parseStatementContent (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:10723:21)\n    at Parser.parseStatement (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:10656:17)\n    at Parser.parseBlockOrModuleBlockBody (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:11232:25)\n    at Parser.parseBlockBody (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:11219:10)\n    at Parser.parseBlock (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:11203:10)\n    at Parser.parseFunctionBody (C:\\OpenServer\\domains\\portrait\\node_modules\\@babel\\parser\\lib\\index.js:10222:24)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.for-each */ "./node_modules/core-js/modules/es.array.for-each.js");
+/* harmony import */ var core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_for_each__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+var accordion = function accordion() {
+  var wrapper = document.querySelector('#accordion'),
+      answers = document.querySelectorAll('.accordion-block');
+  answers.forEach(function (answer) {
+    answer.classList.add('animated', 'fadeInDown');
+    answer.style.display = 'none';
+  });
+  wrapper.addEventListener('click', function (e) {
+    var target = e.target,
+        header = target.parentNode,
+        content = header.nextElementSibling;
+
+    if (target.tagName == 'SPAN' && window.getComputedStyle(content).getPropertyValue('display') == 'none') {
+      content.style.display = 'block';
+      header.classList.add('ui-accordion-header-active');
+    } else {
+      header.classList.remove('ui-accordion-header-active');
+      content.style.display = 'none';
+    }
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (accordion);
 
 /***/ }),
 
