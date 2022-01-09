@@ -908,9 +908,6 @@ h4 {
   padding: 3rem 4rem;
 }
 
-/* .often-questions .none {
-  display: none;
-} */
 .often-questions .accordion-block:before {
   content: '';
   position: absolute;

@@ -11,12 +11,15 @@ const accordion = () => {
         let target = e.target,
             header = target.parentNode,
             content =  header.nextElementSibling;
-        if (target.tagName == 'SPAN' && window.getComputedStyle(content).getPropertyValue('display') == 'none') {
-            content.style.display = 'block';
-            header.classList.add('ui-accordion-header-active');
-        } else {
-            header.classList.remove('ui-accordion-header-active');
-            content.style.display = 'none';
+
+        if (target.tagName == 'SPAN') {
+            if (window.getComputedStyle(content).getPropertyValue('display') == 'none') {
+                header.classList.add('ui-accordion-header-active');
+                content.style.display = 'block';
+            } else {
+                header.classList.remove('ui-accordion-header-active');
+                content.style.display = 'none';
+            }
         }
     });
 };
